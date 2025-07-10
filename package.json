@@ -31,7 +31,9 @@
     "test": "node --test __tests__/index.test.mjs",
     "prepublishOnly": "npm test",
     "lint": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "version": "npm run format && git add -A",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "index.mjs",
