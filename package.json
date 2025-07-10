@@ -1,0 +1,39 @@
+{
+  "name": "prettier-plugin-object-multiline",
+  "version": "1.0.0",
+  "description": "A Prettier plugin that enforces one property per line in all object literals",
+  "main": "index.mjs",
+  "type": "module",
+  "keywords": [
+    "prettier-plugin",
+    "object",
+    "multiline",
+    "formatter",
+    "code-style"
+  ],
+  "author": "Alex Kates",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexkates/prettier-plugin-object-multiline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alex/prettier-plugin-object-multiline/issues"
+  },
+  "homepage": "https://github.com/alexkates/prettier-plugin-object-multiline#readme",
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm test"
+  },
+  "files": [
+    "index.mjs",
+    "README.md",
+    "LICENSE"
+  ]
+}
