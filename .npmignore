@@ -10,8 +10,9 @@
 # Test files
 __tests__
 *.test.js
+*.test.mjs
 *.spec.js
-jest.config.js
+*.spec.mjs
 
 # Build artifacts
 node_modules

@@ -25,12 +25,10 @@
     "prettier": "^3.0.0"
   },
   "devDependencies": {
-    "jest": "^29.6.0",
     "prettier": "^3.0.0"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest --config=jest.config.cjs",
-    "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch --config=jest.config.cjs",
+    "test": "node --test __tests__/index.test.mjs",
     "prepublishOnly": "npm test",
     "lint": "prettier --check .",
     "format": "prettier --write ."
@@ -42,6 +40,6 @@
     "LICENSE"
   ],
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   }
 }
