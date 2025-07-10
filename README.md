@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-A Prettier plugin that enforces **one property per line** in all object literals, no matter `printWidth`.
+A Prettier plugin that enforces **one property per line** in all object literals, regardless of the `printWidth` setting.
 
 ## 🚀 Installation
 
@@ -19,7 +19,7 @@ Once installed, Prettier will automatically use this plugin. No configuration ne
 
 ### Example
 
-Input:
+**Input:**
 
 ```javascript
 const shortObject = {
@@ -34,7 +34,7 @@ const longObject = {
 };
 ```
 
-Output:
+**Output:**
 
 ```javascript
 const shortObject = {
@@ -74,7 +74,7 @@ const nestedObject = {
   e: 4,
 };
 
-// Default Prettier output (without this plugin) might look like:
+// Default Prettier output (without this plugin) might be:
 // const nestedObject = { a: 1, b: { c: 2, d: 3 }, e: 4 };
 // or
 // const nestedObject = {
@@ -131,9 +131,9 @@ It uses Prettier's own babel and estree plugins as a foundation and extends them
 
 - **Consistency**: Ensures all object properties are formatted in the same way, regardless of object size
 - **Readability**: Makes objects easier to read, with each property on its own line
-- **Easy Diffs**: When objects change, git diffs are cleaner with one property per line
+- **Cleaner Git Diffs**: When objects change, Git diffs are cleaner with one property per line
 - **Simplified Editing**: Makes it easier to add, remove, or reorder properties
-- **No Configuration**: Works out of the box with zero configuration
+- **Zero Configuration**: Works out of the box with no additional setup
 
 ## Compatibility
 
@@ -158,7 +158,7 @@ For more detailed information, please see the [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Testing
 
-This plugin uses Node.js built-in test runner for testing. To run the tests:
+This plugin uses Node.js built-in test runner. To run the tests:
 
 ```bash
 npm test
