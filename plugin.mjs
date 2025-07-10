@@ -10,14 +10,8 @@ function printObject(path, options, print) {
   const node = path.getValue();
   const parts = path.map((propPath) => print(propPath), "properties");
 
-  // Make sure we have valid JavaScript by adding commas
-  const printedParts = parts.map((part, i) => {
-    // Add a comma to each property (even if it already has one)
-    if (i < parts.length - 1) {
-      return [part, ","];
-    }
-    return part;
-  });
+  // Add trailing commas to all properties
+  const printedParts = parts.map(part => [part, ","]);
 
   if (node.properties.length === 0) {
     return group(["{}",]);
