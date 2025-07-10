@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexkates/prettier-plugin-object-multiline.git"
+    "url": "git+https://github.com/alexkates/prettier-plugin-object-multiline.git"
   },
   "bugs": {
     "url": "https://github.com/alexkates/prettier-plugin-object-multiline/issues"
