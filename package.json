@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-object-multiline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Prettier plugin that enforces one property per line in all object literals",
   "main": "index.mjs",
   "type": "module",
