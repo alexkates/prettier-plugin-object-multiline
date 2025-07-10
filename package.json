@@ -18,22 +18,33 @@
     "url": "https://github.com/alexkates/prettier-plugin-object-multiline.git"
   },
   "bugs": {
-    "url": "https://github.com/alex/prettier-plugin-object-multiline/issues"
+    "url": "https://github.com/alexkates/prettier-plugin-object-multiline/issues"
   },
   "homepage": "https://github.com/alexkates/prettier-plugin-object-multiline#readme",
   "peerDependencies": {
     "prettier": "^3.0.0"
   },
   "devDependencies": {
-    "prettier": "^3.0.0"
+    "jest": "^29.6.0",
+    "prettier": "^3.0.0",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-jest": "^29.6.0"
   },
   "scripts": {
-    "test": "jest",
-    "prepublishOnly": "npm test"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --config=jest.config.cjs",
+    "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch --config=jest.config.cjs",
+    "prepublishOnly": "npm test",
+    "lint": "prettier --check .",
+    "format": "prettier --write test.js"
   },
   "files": [
     "index.mjs",
+    "plugin.mjs",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }

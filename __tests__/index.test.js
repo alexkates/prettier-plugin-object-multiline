@@ -1,5 +1,9 @@
-const prettier = require("prettier");
-const path = require("path");
+import prettier from "prettier";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const pluginPath = path.resolve(__dirname, "../index.mjs");
 
