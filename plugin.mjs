@@ -11,10 +11,10 @@ function printObject(path, options, print) {
   const parts = path.map((propPath) => print(propPath), "properties");
 
   // Add trailing commas to all properties
-  const printedParts = parts.map(part => [part, ","]);
+  const printedParts = parts.map((part) => [part, ","]);
 
   if (node.properties.length === 0) {
-    return group(["{}",]);
+    return group(["{}"]);
   }
 
   return group([
@@ -42,9 +42,9 @@ const plugin = {
 
         // For all other nodes, use the default estree printer
         return estree.printers.estree.print(path, options, print);
-      }
-    }
-  }
+      },
+    },
+  },
 };
 
 export default plugin;

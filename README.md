@@ -21,8 +21,16 @@ Once installed, Prettier will automatically use this plugin. No configuration ne
 Input:
 
 ```javascript
-const shortObject = { a: 1, b: 2, c: 3 };
-const longObject = { propertyOne: "value", propertyTwo: "another value", propertyThree: "yet another value" };
+const shortObject = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+const longObject = {
+  propertyOne: "value",
+  propertyTwo: "another value",
+  propertyThree: "yet another value",
+};
 ```
 
 Output:
@@ -46,7 +54,14 @@ The plugin also formats nested objects correctly:
 
 ```javascript
 // Input
-const nestedObject = { a: 1, b: { c: 2, d: 3 }, e: 4 };
+const nestedObject = {
+  a: 1,
+  b: {
+    c: 2,
+    d: 3,
+  },
+  e: 4,
+};
 
 // Output with this plugin
 const nestedObject = {
@@ -73,7 +88,20 @@ The plugin handles complex, deeply nested objects with consistency:
 
 ```javascript
 // Input
-const config = { server: { port: 3000, host: "localhost", options: { timeout: 1000, secure: true } }, logging: { level: "info", format: "json" } };
+const config = {
+  server: {
+    port: 3000,
+    host: "localhost",
+    options: {
+      timeout: 1000,
+      secure: true,
+    },
+  },
+  logging: {
+    level: "info",
+    format: "json",
+  },
+};
 
 // Output with this plugin
 const config = {
