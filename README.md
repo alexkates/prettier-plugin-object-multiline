@@ -13,9 +13,27 @@ A Prettier plugin that enforces **one property per line** in all object literals
 npm install --save-dev prettier prettier-plugin-object-multiline
 ```
 
+Then add the plugin to your Prettier configuration:
+
+### .prettierrc
+
+```json
+{
+  "plugins": ["prettier-plugin-object-multiline"],
+}
+```
+
+### .prettierrc.js
+
+```js
+module.exports = {
+  plugins: ["prettier-plugin-object-multiline"],
+};
+```
+
 ## 📝 Usage
 
-Once installed, Prettier will automatically use this plugin. No configuration needed!
+Once installed and configured, the plugin will automatically format all object literals with one property per line. No additional configuration options are needed!
 
 ### Example
 
